@@ -7,7 +7,7 @@
 在因果推断中,因果图是非常重要的一个工具.有了因果图我们就可以很好地去进行因果效应分析.所以如何从数据中去构造因果图成为了一个很重要地问题.
 
 - 因果图的特点:因果图是一个directed acyclic graph(DAG).有向是因果与关联的最大区别,因果说明两个有关系的变量一定一个是因,一个是果,两个变量的地位是不同的.
-- 为何提出PC算法:完全可以使用独立性判断和一些因果规则来暴力求解因果图.但是当因果图中节点很多时,因果图的求解问题就变味了一个高维问题,是难以求解的.因此提出PC算法来解决高维稀疏因果图的求解.
+- 为何提出PC算法:完全可以使用独立性判断和一些因果规则来暴力求解因果图.但是当因果图中节点很多时,因果图的求解问题就变为了一个高维问题,是难以求解的.因此提出PC算法来解决高维稀疏因果图的求解.
 - PC算法的主要流程:构造一个完全无向图-->根据条件独立性来删除边,构造DAG的skeleton-->应用因果图的一些规则来扩展到completed partially directed acyclic graph(CPDAG)
 
 
@@ -68,6 +68,6 @@ evaluation.py:实现了使用利用模拟数据对PC算法进行评价,评价指
 
 
 
-# 6. Reference
+## 6. Reference
 
 [1]Peter, K. M. a. B. (2012). "Estimating high-dimensional directed acyclic graphs with the PC-algorithm." Journal of Machine Learning Research（JMLR） 8(2): 613-636.
